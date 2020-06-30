@@ -35,7 +35,7 @@ function HomePage() {
             </Head>
             <Navbar color="dark" dark expand="md" className="fixed-top">
                 <Container>
-                    <NavbarBrand href="/"><FontAwesomeIcon icon="laptop-code"/></NavbarBrand>
+                    <NavbarBrand href="/"><FontAwesomeIcon icon="laptop-code" /></NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
@@ -95,21 +95,21 @@ function HomePage() {
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="rounded-circle circulo centralizar">
-                            <FontAwesomeIcon icon="code"/>
+                                <FontAwesomeIcon icon="code" />
                             </div>
                             <h2 className="mt-4 mb-4">Serviço 1</h2>
                             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                         </div>
                         <div className="col-lg-4">
                             <div className="rounded-circle circulo centralizar">
-                            <FontAwesomeIcon icon="mobile-alt"/>
+                                <FontAwesomeIcon icon="mobile-alt" />
                             </div>
                             <h2 className="mt-4 mb-4">Serviço 2</h2>
                             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                         </div>
                         <div className="col-lg-4">
                             <div className="rounded-circle circulo centralizar">
-                            <FontAwesomeIcon icon="bullhorn"/>
+                                <FontAwesomeIcon icon="bullhorn" />
                             </div>
                             <h2 className="mt-4 mb-4">Serviço 3</h2>
                             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -117,9 +117,78 @@ function HomePage() {
                     </div>
                 </Container>
             </Jumbotron>
-            <Jumbotron>
-                <Container>
-                    A
+
+            <Jumbotron fluid className="portifolio">
+                <style>{
+                    `.portifolio{
+                        background-color: #f8f9fa;
+                        padding-top: 80px;
+                        padding-bottom: 80px; 
+                        margin-bottom: 0rem !important;
+                    }`
+                }</style>
+                <Container className="text-center">
+                    <div>
+                        <h2 className="display-4">Portifólio</h2>
+                        <p className="lead pb-4">Featured content or information</p>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-md-3">
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="/portolio_um.jpg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="/portolio_dois.jpg" class="card-img-top" alt="..."/>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="/portolio_tres.jpg" class="card-img-top" alt="..."/>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="portolio_quatro.jpg" class="card-img-top" alt="..."/>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="portolio_cinco.jpg" class="card-img-top" alt="..."/>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card">
+                                <img src="portolio_seis" class="card-img-top" alt="..."/>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </Container>
             </Jumbotron>
         </div>
