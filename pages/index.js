@@ -35,7 +35,7 @@ function HomePage() {
             </Head>
             <Navbar color="dark" dark expand="md" className="fixed-top">
                 <Container>
-                    <NavbarBrand href="/">Ramon Goveia</NavbarBrand>
+                    <NavbarBrand href="/"><FontAwesomeIcon icon="laptop-code"/></NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
@@ -95,7 +95,7 @@ function HomePage() {
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="rounded-circle circulo centralizar">
-                            <FontAwesomeIcon icon="laptop-code"/>
+                            <FontAwesomeIcon icon="code"/>
                             </div>
                             <h2 className="mt-4 mb-4">Serviço 1</h2>
                             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
@@ -115,6 +115,11 @@ function HomePage() {
                             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                         </div>
                     </div>
+                </Container>
+            </Jumbotron>
+            <Jumbotron>
+                <Container>
+                    A
                 </Container>
             </Jumbotron>
         </div>
