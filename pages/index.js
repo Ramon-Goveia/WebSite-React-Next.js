@@ -133,62 +133,109 @@ function HomePage() {
                         <p className="lead pb-4">Featured content or information</p>
                     </div>
 
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-md-3">
-                        <div class="col mb-4">
-                            <div class="card">
-                                <img src="/portolio_um.jpg" class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div className="row row-cols-1 row-cols-md-2 row-cols-md-3">
+                        <div className="col mb-4">
+                            <div className="card">
+                                <img src="/portolio_um.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col mb-4">
-                            <div class="card">
-                                <img src="/portolio_dois.jpg" class="card-img-top" alt="..."/>
+                        <div className="col mb-4">
+                            <div className="card">
+                                <img src="/portolio_dois.jpg" className="card-img-top" alt="..." />
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col mb-4">
-                            <div class="card">
-                                <img src="/portolio_tres.jpg" class="card-img-top" alt="..."/>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div className="col mb-4">
+                            <div className="card">
+                                <img src="/portolio_tres.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col mb-4">
-                            <div class="card">
-                                <img src="portolio_quatro.jpg" class="card-img-top" alt="..."/>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div className="col mb-4">
+                            <div className="card">
+                                <img src="portolio_quatro.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col mb-4">
-                            <div class="card">
-                                <img src="portolio_cinco.jpg" class="card-img-top" alt="..."/>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div className="col mb-4">
+                            <div className="card">
+                                <img src="portolio_cinco.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col mb-4">
-                            <div class="card">
-                                <img src="portolio_seis" class="card-img-top" alt="..."/>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div className="col mb-4">
+                            <div className="card">
+                                <img src="portolio_seis.jpg" className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+                                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </Container>
+            </Jumbotron>
+            <style>{
+                `.card{
+                        background-color: #fff;
+                        padding-top: 80px;
+                        padding-bottom: 80px; 
+                        margin-bottom: 0rem !important;
+                    }`
+            }</style>
+            <Jumbotron fluid className="card">
+                <style>{
+                    `.card{
+                        background-color: #fff;
+                        padding-top: 80px;
+                        padding-bottom: 80px; 
+                        margin-bottom: 0rem !important;
+                    }`
+                }</style>
+                <Container>
+                    <div className="row featurette">
+                        <div className="col-md-7 order-md-2">
+                            <h2 className="featurette-heading">Oh yeah, it’s that good. <span className="text-muted">See for yourself.</span></h2>
+                            <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        </div>
+                        <div className="col-md-5 order-md-1">
+                            <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                        </div>
+                    </div>
+                </Container>
+            </Jumbotron>
+
+            <Jumbotron fluid className="rodape">
+                <style>{
+                    `.rodape{
+                        background-color:#000;
+                        color: #fff;
+                        padding-top:0px;
+                        margin-bottom: 0rem !important;
+                    }`
+                }</style>
+                <Container>
+                    <footer className="footer mt-auto py-3">
+                        <div className="container">
+                            <span className="text-muted"> © 2020 Copyright: Ramon Goveia</span>
+                        </div>
+                    </footer>
                 </Container>
             </Jumbotron>
         </div>
