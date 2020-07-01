@@ -34,16 +34,22 @@ function HomePage() {
                 <meta name="author" content="Ramon Goveia" />
             </Head>
             <Navbar color="dark" dark expand="md" className="fixed-top">
-                <Container>
-                    <NavbarBrand href="/"><FontAwesomeIcon icon="laptop-code" /></NavbarBrand>
+                <Container> 
+                    <NavbarBrand href="/"><FontAwesomeIcon icon="laptop-code"/></NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
-                                <NavLink href="/">Inicio</NavLink>
+                                <NavLink href="/#inicio">Inicio</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/">Portifólio</NavLink>
+                                <NavLink href="/#quem-somos">Quem Somos</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/#servicos">Serviços</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/#portifolio">Portifólio</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
@@ -52,42 +58,53 @@ function HomePage() {
             <Jumbotron fluid className="descr-top">
                 <style>{
                     `.descr-top{
-                    background-color: #000;
-                    color: #fff;
-                    padding-top: 150px;
-                    padding-bottom: 100px;
-                    margin-bottom: 0rem !important;
+                        background-color: #000;
+                        color: #fff;
+                        padding-top: 150px;
+                        padding-bottom: 100px;
+                        margin-bottom: 0rem !important;
+                        position: relative;                 
+                    }.inicio-link{
+                        position: absolute;
+                        top: 0px;
                     }`
                 }</style>
                 <Container className="text-center">
-                    <h1 className="display-4 mb-4">Temos a solução que sua empresa precisa!</h1>
-                    <p className="lead mb-4">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <p className="lead">
-                        <Button outline color="warning" size="lg">ENTRE EM CONTATO</Button>
-                    </p>
+                <a name="inicio" className="inicio-link"/>
+                    <div>
+                        <h1 className="display-4 mb-4">Temos a solução que sua empresa precisa!</h1>
+                        <p className="lead mb-4">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+                        <p className="lead">
+                            <Button outline color="warning" size="lg">ENTRE EM CONTATO</Button>
+                        </p>
+                    </div>
                 </Container>
             </Jumbotron>
-
             <Jumbotron fluid className="servicos">
                 <style>{
                     `.servicos{
-                   background-color: #fff;
-                   padding-top: 80px;
-                   padding-bottom: 80px;
-                   margin-bottom: 0rem !important;
+                        background-color: #fff;
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                        margin-bottom: 0rem !important;
+                        position: relative;
                     }.circulo{
-                   width: 140px;
-                   height: 140px;
-                   background-color: #fed136;
-                   font-size: 52px;
-                   padding-top: 24px;
-                   color: #fff;
+                        width: 140px;
+                        height: 140px;
+                        background-color: #fed136;
+                        font-size: 52px;
+                        padding-top: 24px;
+                        color: #fff;
                     }.centralizar{
-                   margin: 0 auto !important;
-                   float: none !important;
+                        margin: 0 auto !important;
+                        float: none !important;
+                    }.servicos-link{
+                        position: absolute;
+                        top: 0px;
                     }`
                 }</style>
                 <Container className="text-center">
+                <a name="servicos" className="servicos-link"/>
                     <div>
                         <h2 className="display-4">Serviços</h2>
                         <p className="lead pb-4">Featured content or information</p>
@@ -117,7 +134,6 @@ function HomePage() {
                     </div>
                 </Container>
             </Jumbotron>
-
             <Jumbotron fluid className="portifolio">
                 <style>{
                     `.portifolio{
@@ -125,14 +141,18 @@ function HomePage() {
                         padding-top: 80px;
                         padding-bottom: 80px; 
                         margin-bottom: 0rem !important;
+                        position: relative;
+                    }.portifolio-link{
+                        position: absolute;
+                        top: 0px;
                     }`
                 }</style>
                 <Container className="text-center">
+                <a name="portifolio" className="portifolio-link"/>
                     <div>
                         <h2 className="display-4">Portifólio</h2>
                         <p className="lead pb-4">Featured content or information</p>
                     </div>
-
                     <div className="row row-cols-1 row-cols-md-2 row-cols-md-3">
                         <div className="col mb-4">
                             <div className="card">
@@ -191,24 +211,21 @@ function HomePage() {
                     </div>
                 </Container>
             </Jumbotron>
-            <style>{
-                `.card{
-                        background-color: #fff;
-                        padding-top: 80px;
-                        padding-bottom: 80px; 
-                        margin-bottom: 0rem !important;
-                    }`
-            }</style>
-            <Jumbotron fluid className="card">
+            <Jumbotron fluid className="quem-somos">
                 <style>{
-                    `.card{
+                    `.quem-somos{
                         background-color: #fff;
                         padding-top: 80px;
                         padding-bottom: 80px; 
                         margin-bottom: 0rem !important;
+                        position: relative;
+                    }.quem-somos-link{
+                        position: absolute;
+                        top: 0px;
                     }`
                 }</style>
                 <Container>
+                <a name="quem-somos" className="quem-somos-link"/>
                     <div className="row featurette">
                         <div className="col-md-7 order-md-2">
                             <h2 className="featurette-heading">Oh yeah, it’s that good. <span className="text-muted">See for yourself.</span></h2>
@@ -220,7 +237,6 @@ function HomePage() {
                     </div>
                 </Container>
             </Jumbotron>
-
             <Jumbotron fluid className="rodape">
                 <style>{
                     `.rodape{
@@ -230,7 +246,7 @@ function HomePage() {
                         margin-bottom: 0rem !important;
                     }`
                 }</style>
-                <Container>
+                <Container className="text-center">
                     <footer className="footer mt-auto py-3">
                         <div className="container">
                             <span className="text-muted"> © 2020 Copyright: Ramon Goveia</span>
