@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import Head from 'next/head';
 
 import {
@@ -33,28 +34,7 @@ function HomePage() {
                 <meta name="description" content="Agência Digital" />
                 <meta name="author" content="Ramon Goveia" />
             </Head>
-            <Navbar color="dark" dark expand="md" className="fixed-top">
-                <Container> 
-                    <NavbarBrand href="/"><FontAwesomeIcon icon="laptop-code"/></NavbarBrand>
-                    <NavbarToggler onClick={toggle} />
-                    <Collapse isOpen={isOpen} navbar>
-                        <Nav className="mr-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/#inicio">Inicio</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/#quem-somos">Quem Somos</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/#servicos">Serviços</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/#portifolio">Portifólio</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Container>
-            </Navbar>
+            
             <Jumbotron fluid className="descr-top">
                 <style>{
                     `.descr-top{
@@ -166,7 +146,7 @@ function HomePage() {
                         <div className="col mb-4">
                             <div className="card">
                                 <img src="/portolio_dois.jpg" className="card-img-top" alt="..." />
-                                <div class="card-body">
+                                <div className="card-body">
                                     <h5 className="card-title">Card title</h5>
                                     <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
