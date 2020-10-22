@@ -1,4 +1,9 @@
-# WebSite-React-Next.js
+# WebSite ReactJS - Next.js
+
+Tecnologias:
+
+ - ReactJS
+ - NextJS
 
 ### Projeto desenvolvido durante o curso de reactJS da plataforma celke cursos.
 
