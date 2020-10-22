@@ -8,6 +8,7 @@ Tecnologias:
 ### Projeto desenvolvido durante o curso de reactJS da plataforma celke cursos.
 
 COMO RODAR O PROJETO BAIXADO
+
 Instalar as dependências
 ### npm install
 
